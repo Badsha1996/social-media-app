@@ -1,0 +1,17 @@
+.main{
+    height: 100vh;
+    height: 100svh;
+
+    background-color: black;
+}
+
+.gridlayout{
+    display: grid;
+    grid-template-columns: 0.9fr 1.5fr 1fr;
+    height: 100%;
+}
+
+.gridSection{
+
+
+}
