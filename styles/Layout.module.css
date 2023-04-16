@@ -1,17 +1,13 @@
-.main{
-    height: 100vh;
-    height: 100svh;
-
+.main {
     background-color: black;
+    height: 100vh;
+    height: 100 svh;
+    outline: 1px solid white;
 }
 
-.gridlayout{
-    display: grid;
-    grid-template-columns: 0.9fr 1.5fr 1fr;
+.wrapper {
     height: 100%;
-}
-
-.gridSection{
-
+    display: grid;
+    grid-template-rows: 90%;
 
 }

@@ -1,10 +1,10 @@
-import styles from '@/styles/Sidebar.module.css';
-import BottomNavItem from './BottomNavItem';
-import Logo from './Logo';
-import { AiOutlineHome, AiOutlineNotification } from 'react-icons/ai';
-import { CgProfile } from 'react-icons/cg';
+import styles from '@/styles/BottomNav.module.css'
+import { CgProfile } from 'react-icons/cg'
+import { AiOutlineHome, AiOutlineNotification } from 'react-icons/ai'
+import Logo from './Logo'
+import BottomNavItem from './BottomNavItem'
 
-function Sidebar():JSX.Element {
+export default function BottomNav() {
   const items = [{
     label: 'Home', href: '/', icon: AiOutlineHome
   },
@@ -14,6 +14,7 @@ function Sidebar():JSX.Element {
   {
     label: 'Profile', href: '/users/012', icon: CgProfile
   }]
+
   return (
     <div className={styles.wrapper}>
       <main className={styles.main}>
@@ -32,5 +33,3 @@ function Sidebar():JSX.Element {
     </div>
   )
 }
-
-export default Sidebar
