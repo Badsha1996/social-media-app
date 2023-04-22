@@ -1,4 +1,3 @@
-import styles from '@/styles/BottomNav.module.css'
 import { CgProfile } from 'react-icons/cg'
 import { AiOutlineHome, AiOutlineNotification } from 'react-icons/ai'
 import Logo from './Logo'
@@ -16,20 +15,21 @@ export default function BottomNav() {
   }]
 
   return (
-    <div className={styles.wrapper}>
-      <main className={styles.main}>
-        <Logo />
-        {items.map((item, index) => {
-          return (
-            <div key={index}>
+    <div className='col-span-1 h-full pr-4 md:pr-6'>
+      <div className='flex flex-col items-end'>
+        <main className='space-y-2 lg:w-[230px]'>
+          <Logo />
+          {items.map((item) => {
+            return (
               <BottomNavItem
+                key={item.href}
                 href={item.href}
                 label={item.label}
                 icon={item.icon} />
-            </div>
-          )
-        })}
-      </main>
+            )
+          })}
+        </main>
+      </div>
     </div>
   )
 }
